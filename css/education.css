@@ -1,0 +1,79 @@
+.all-educations {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: rgb(212, 211, 211);
+    background-size: cover;
+    /* background: url(../images/project-wallpaper.jpg) center no-repeat;*/
+    overflow-x: hidden;
+    background-attachment: fixed;
+    padding-top: 8vh; color: black; text-align: center;
+}
+
+.page-header {
+    font-size: 10vw;
+    letter-spacing: 0.8rem;
+    color: rgba(0, 0, 0, .8);
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: var(--main-font);
+    padding: 2.3rem;
+}
+
+.year-header {
+    font-size: 2rem;
+}
+
+.major-header {
+    font-size: 2rem; 
+    padding-top: 1rem;
+}
+
+.my-info-description ul li {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+.my-info-description ul h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.extra-activities {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    overflow: hidden;
+}
+
+.competition-header {
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 900px) {  
+    .page-header {
+        font-size: 8rem;
+    }
+
+    .major-header {
+        font-size: 3rem; 
+        padding-top: 1rem;
+    }
+
+    .my-info-description ul li {
+        font-size: 2rem;
+    }
+    
+    .my-info-description ul h2 {
+        font-size: 2.5rem;
+    }
+
+
+}
