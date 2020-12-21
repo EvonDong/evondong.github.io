@@ -14,8 +14,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <Link rel="stylesheet" type="text/css" href="/css/styles.css">
     <Link rel="stylesheet" type="text/css" href="/css/project.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/2.2.1/mdb.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     
- 
 </head>
 
 <body>
@@ -33,6 +53,95 @@
                 </div>
             </div>
             <div class="project-list">
+                <!-- Nerdspace -->
+                <a data-toggle="modal" data-target="#modal1">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="/images/nerdspace-home-top.png">
+                        </div>
+                        <div class="content">
+                            <h2>Nerdspace</h2>
+                            <p>All-in-one study buddy finder application for students</p>
+                            <h3>React, Firebase Realtime Database, Redux, Node JS, Express</h3>
+                            <div class="single-animation">
+                                <a href="#modal1" data-toggle="modal" class="btn cta-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="modal fade bd-example-modal-lg" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title proj-title" id="exampleModalLongTitle">Nerdspace</h1>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="close-sign" aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body proj-body">
+                        <h2 class="purpose">Purpose: Allow students to <span>find matching study buddy</span> and <span data-scroll >provide an integrated virtual study platform</span></h2>
+                        <video controls="controls" width="100%" height="100%" name="nerdspace-demo" src="/images/Nerdspace-demo.mov"></video>
+                        <h2 class="tech-header">Tech stack: React, Redux, Node js, Express, Cloudinary </h2>
+                            <ul>
+                                <li>Built a <span>specialized buddy finder application</span> that match students based on their educational background and relevant interests</li>
+                                <li>Designed and implemented <span>virtual study rooms</span> for students to share notes and meeting agendas</li>
+                                <li>Utilized Firebase Realtime Database to develop <span>real-time messaging features and chat rooms</span></li>
+                                <li>Constructed <span>detailed data visualization elements</span> for users to find common free time with their buddies</li>
+                                <li>Constructed a <span>profile page</span> where users can update their educational status and interests</li>
+                                <li>Supplemented the application with a <span>motivational quote generator and a reminder list</span></li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Static Analyzer -->
+                <a data-toggle="modal" data-target="#modal2">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="/images/static_analy_ui.png">
+                        </div>
+                        <div class="content">
+                            <h2>Static Analyzer Program</h2>
+                            <p>A meticulously designed software for analyzing programs</p>
+                            <h3>C, C++, CMake, Python</h3>
+                            <div class="single-animation">
+                                <a href="#modal2" data-toggle="modal" class="btn cta-btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="modal fade bd-example-modal-lg" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title proj-title" id="exampleModalLongTitle">Nerdspace</h1>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="close-sign" aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body proj-body">
+                        <h2 class="purpose">Purpose: <span>Analyze programs</span> and <span>deliver an appropriate response</span> based on various queries inputted </h2>
+                        <video controls="controls" width="100%" height="100%" name="nerdspace-demo" src="/images/Nerdspace-demo.mov"></video>
+                        <h2 class="tech-header">C, C++, CMake, Python</h2>
+                            <ul>
+                                <li>Built a <span>specialized buddy finder application</span> that match students based on their educational background and relevant interests</li>
+                                <li>Designed and implemented <span>virtual study rooms</span> for students to share notes and meeting agendas</li>
+                                <li>Utilized Firebase Realtime Database to develop <span>real-time messaging features and chat rooms</span></li>
+                                <li>Constructed <span>detailed data visualization elements</span> for users to find common free time with their buddies</li>
+                                <li>Constructed a <span>profile page</span> where users can update their educational status and interests</li>
+                                <li>Supplemented the application with a <span>motivational quote generator and a reminder list</span></li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="imgBx">
                         <img src="/images/shoppertize-home-top.png">
@@ -41,6 +150,9 @@
                         <h2>Shoppertize</h2>
                         <p>Stylish, functional e-commerce website</p>
                         <h3>Django, SQLite, HTML & CSS, Bootstrap, Python</h3>
+                        <div class="single-animation">
+                            <a href="#modal1" data-toggle="modal" class="btn cta-btn">Learn more</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -51,6 +163,9 @@
                         <h2>TreasurerPro</h2>
                         <p>Highly specialised finance tracker for organisations</p>
                         <h3>Java, JavaFX, Junit, Travis</h3>
+                        <div class="single-animation">
+                            <a href="#modal1" data-toggle="modal" class="btn cta-btn">Learn more</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -61,6 +176,9 @@
                         <h2>ExcerTracker</h2>
                         <p>Sophiscated fitness tracking website</p>
                         <h3>MERN (MongoDB, Express, React, Node.js) stack, Javascript</h3>
+                        <div class="single-animation">
+                            <a href="#modal1" data-toggle="modal" class="btn cta-btn">Learn more</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -71,15 +189,14 @@
                         <h2>ChittyChat</h2>
                         <p>All-in-one chat app integrated with social media features</p>
                         <h3>React Native, Javascript</h3>
+                        <div class="single-animation">
+                            <a href="#modal1" data-toggle="modal" class="btn cta-btn">Learn more</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-
-
-
 
 
 
@@ -88,6 +205,8 @@
             $("#navbar-placeholder").load("navbar.html");
         })
     </script>
+
+
 
 </body>
 </html>

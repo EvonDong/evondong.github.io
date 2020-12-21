@@ -2,21 +2,45 @@
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    background-color: rgb(212, 211, 211);
+    background-color: rgb(0, 0, 0);
     background-size: cover;
     /* background: url(../images/project-wallpaper.jpg) center no-repeat;*/
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-attachment: fixed;
-    padding-top: 8vh; color: black; text-align: center;
+    padding-top: 8vh; 
+    color: black; 
+    text-align: center;
+}
+
+.edu-section {
+    background-color: rgb(216, 216, 216);
+}
+
+.divider {
+    display: flex;
+    padding: 1rem 1rem;
+  }
+
+.divier::before, divier::after {
+    content: "";
+    flex: 1;
+}
+
+.all-educations .container {
+    padding: 1rem 1rem;
+}
+
+.all-educations .container:hover {
+    background-color: rgb(255, 255, 255);
 }
 
 .page-header {
     font-size: 10vw;
     letter-spacing: 0.8rem;
-    color: rgba(0, 0, 0, .8);
+    color: rgb(255, 255, 255);
     font-weight: 100;
     letter-spacing: 1px;
-    font-family: var(--main-font);
+    font-family: var(--secondary-font);
     padding: 2.3rem;
 }
 
@@ -29,12 +53,22 @@
     padding-top: 1rem;
 }
 
+.my-info-description ul {
+    padding: 1.5rem 2rem;
+}
+
 .my-info-description ul li {
     font-size: 1.5rem;
     padding: 0.3rem;
 }
 
 .my-info-description ul h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.my-info-description ul h3 {
     font-size: 2rem;
     font-weight: 200;
     text-decoration: underline;
@@ -55,7 +89,6 @@
     font-size: 2rem;
     text-decoration: underline;
 }
-
 
 @media screen and (min-width: 900px) {  
     .page-header {

@@ -10,7 +10,7 @@
 }
 
 .all-projects .container .global-headline .sub-headline {
-    padding-top: 6rem;
+    padding-top: 2rem;
     color: #fff;
 }
 
@@ -44,8 +44,7 @@
     position: relative;
     /* width: 20vw; */
     min-width: 27rem;
-    height: 35rem;
-    /* min-height: 35vh; */
+    height: 70vh;
     
     /* height: 42vh; */
     max-width: 40rem;
@@ -76,13 +75,13 @@
 
 .container .card .imgBx img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     opacity: 1;
     transition: 0.5s;
 }
 
 .container .card:hover .imgBx img {
-    height: 70%;
+    height: 63%;
     opacity: 1;
 }
 
@@ -114,26 +113,27 @@
     left: 1rem;
     right: 1rem;
     bottom: 1rem;
-    height: 9rem;
+    top: 24rem;
+    /* height: 90vh; */
     background: rgba(0, 0, 0, .4);
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 7vh;
-    padding-top: 2rem;
+    min-height: 9vh;
+    padding: 1rem 2rem;
     opacity: 1;
     transition: 0.5s;
 }
 
-/* .container .card:hover .content {
+
+.container .card:hover .content {
     opacity: 1;
     justify-content: center;
     flex-direction: column;
-    min-height: 7vh;
-    padding-top: 2rem;
-} */
+    min-height: 40%;
+} 
 
 .container .card .content h2 {
     font-size: 2rem;
@@ -145,7 +145,7 @@
 }
 
 .container .card .content p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--tertiary-font-color);
     font-weight: 100;
     letter-spacing: 1px;
@@ -157,16 +157,85 @@
     color: #f44336;
     font-weight: 500;
     line-height: 2rem;
-    padding: 1rem 1rem;
-    padding-bottom: 2.5rem;
+    /* padding: 1rem 1rem; */
+    /* padding-bottom: 2rem; */
 }
+
+
+/* Modal */
+
+.modal-content {
+    padding: 1rem 1rem;
+    font-family: var(--main-font);
+}
+
+.modal-content .modal-header .proj-title {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.close-sign {
+    font-size: 5rem;
+}
+
+.close-sign:hover {
+    font-weight: 500;
+}
+
+.modal-content .proj-body {
+    padding: 2rem 2rem;
+    justify-content: space-between;
+    font-family: var(--body-font);
+    color: var(--body-font-color);
+}
+
+.modal-content .proj-body span {
+	background-image: linear-gradient(#9df4ff, #55acf3);
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	background-size: 100% 0.5rem;
+	transition: background-size .2s, background-position .1s ease-in .2s;
+}
+
+.modal-content .proj-body span:hover {
+	background-size: 100% 100%;
+	background-position: 0% 0%;
+	transition: background-position .2s, background-size .1s ease-in .2s;
+}
+
+.modal-content .proj-body video {
+    padding: 1rem 1rem;
+}
+
+
+.modal-content .proj-body .tech-header {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);
+}
+
+.modal-content .proj-body .purpose {
+    font-size: 2rem;
+}
+
+.modal-content .proj-body ul {
+    font-size: 1.5rem;
+    font-family: var(--body-font);
+    padding: 1rem 1rem;
+}
+
+.modal-content .proj-body ul li {
+    padding: 0.5rem 0rem;
+}
+
 
 
 @media not all and (pointer: coarse) {
 
     .container .card {
-        min-width: 30rem;
+        min-width: 35rem;
         height: 27vh;
+        min-height: 40vh;
     }
 
     .container .card .imgBx {
@@ -174,11 +243,16 @@
     }
 
     .container .card .imgBx img {
-        height: 100%;
+        height: 70%;
+    }
+
+    .container .card:hover .imgBx img {
+        height: 63%;
     }
 
     .container .card .content {
         position: absolute;
+        top: auto;
         left: 1rem;
         right: 1rem;
         bottom: 1rem;
@@ -198,6 +272,7 @@
         flex-direction: column;
         min-height: 7vh;
         padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .container .card:hover .content h2 {
@@ -210,7 +285,7 @@
     }
     
     .container .card:hover .content p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: var(--tertiary-font-color);
         font-weight: 100;
         letter-spacing: 1px;
@@ -222,9 +297,24 @@
         color: #f44336;
         font-weight: 500;
         line-height: 2rem;
-        padding: 1rem 1rem;
-        padding-bottom: 2rem;
+        /* padding: 1rem 1rem;
+        padding-bottom: 2rem; */
     }
+
+    .modal-content .proj-body .purpose {
+        font-size: 2.5rem;
+    }
+
+    .modal-content .proj-body .tech-header {
+        font-size: 3rem;
+    }
+
+    .modal-content .proj-body ul {
+        font-size: 2rem;
+        padding: 1rem 1rem;
+    }
+        
+       
 
 }
 
