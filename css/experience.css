@@ -1,0 +1,100 @@
+.experience {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #000;
+    background-size: cover;
+    /* background: url(../images/project-wallpaper.jpg) center no-repeat;*/
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+
+.experience .sub-headline {
+    margin: 7vh 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.experience .container .global-headline .exp-headline {
+    color: #ffffff83;
+}
+
+.experience .container .experience-timeline {
+    margin: 3rem 0rem;
+    left: -10vw;
+}
+
+.experience .container .experience-content {
+    /* padding: 1rem 1rem; */
+    min-width: 25vw;
+}
+
+.experience .container .experience-content h2 {
+    font-size: max(10px, 3vw);
+}
+
+.experience .container .experience-content h3 {
+    font-size: max(8px, 2vw);
+}
+
+.experience .container .experience-content h2 span {
+    font-size: max(7px, 2vw);
+}
+
+
+
+.experience-timeline .experience-content h3, .experience-timeline .experience-content h2 {
+    margin-bottom: -5rem;
+}
+
+
+
+
+@media screen and (min-width: 900px) {        /* if screen width is at least 900px */
+
+    .experience .sub-headline {
+        margin: 2rem 1rem;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .experience-timeline {
+        min-width: 50vw;
+    }
+
+    .experience .container .experience-content h2 span {
+        font-size: 2rem;
+    }
+    
+    .experience .container .experience-timeline {
+        margin: 3rem 0rem;
+        left: -13vw;
+    }
+
+    .experience .container .experience-content h2 {
+        font-size: 3rem;
+    }
+
+    .experience .container .experience-content h3 {
+        font-size: 2.5rem;
+    }
+
+    
+}
+
+@media only screen and (max-height: 1440px) and (min-width: 900px)  {
+    
+    .experience .container .experience-content h2 {
+        font-size: min(5vw, 25px);
+    }
+
+    .experience .container .experience-content h3 {
+        font-size: min(5vw, 20px);
+    }
+
+    .experience .container .experience-content h2 span {
+        font-size: min(5vw, 17px);
+    }
+
+} 
