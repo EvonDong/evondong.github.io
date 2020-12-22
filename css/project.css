@@ -171,7 +171,7 @@
 }
 
 .modal-content .modal-header .proj-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 500;
 }
 
@@ -246,6 +246,7 @@
         min-width: 35rem;
         height: 27vh;
         min-height: 40vh;
+        margin: 2rem 2rem;
         /* padding: 3rem 3rem; */
     }
 
@@ -282,8 +283,7 @@
         justify-content: center;
         flex-direction: column;
         min-height: 7vh;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem 0rem;
     }
 
     .container .card:hover .content h2 {
