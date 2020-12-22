@@ -44,10 +44,12 @@
     position: relative;
     /* width: 20vw; */
     min-width: 27rem;
-    min-height: 70vh;
-    
-    /* height: 42vh; */
     max-width: 40rem;
+
+    /* min-height: 70vh; */
+
+    height: 72vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +59,7 @@
     /* background: #0826d1; */
     /* background: linear-gradient(235deg, #c3c9ff, #d5d5f1, #9bcaff); */
     background: #000;
+    margin: 2rem 0rem;
 }
 
 .container .card:hover {
@@ -69,7 +72,7 @@
     left: 0;
     width: 100%;
     height: 70%;
-    padding: 1rem;
+    padding: 0rem 1rem;
     overflow: hidden;
     box-sizing: border-box;
 }
