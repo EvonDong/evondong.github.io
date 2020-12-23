@@ -13,8 +13,10 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <Link rel="stylesheet" type="text/css" href="/css/swiper-bundle.min.css">
-    <Link rel="stylesheet" type="text/css" href="/css/education.css">s
+    <Link rel="stylesheet" type="text/css" href="/css/education.css">
     <Link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+    <script>$.ajaxPrefilter(function( options, originalOptions, jqXHR ) {    options.async = true; });</script> 
  
 </head>
 
@@ -31,7 +33,7 @@
                 <div class="photo animate-right">
                     <img src="../images/nus.png" alt="">
                 </div>
-                <div class="my-info-description animate-left padding-right" style="min-width: 65%;">
+                <div class="my-info-description animate-left padding-right" style="min-width: 70%;">
                     <div class="global-headline">
                         <h2 class="sub-headline">
                             <span class="first-letter">N</span>ational University of Singapore
@@ -137,12 +139,13 @@
         </div>
     </section>
 
-
     <script>
         $(function() {
             $("#navbar-placeholder").load("navbar.html");
         })
     </script>
+    
 </body>
 
 </html>
+
