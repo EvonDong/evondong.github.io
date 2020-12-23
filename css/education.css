@@ -12,6 +12,7 @@
     text-align: center;
 }
 
+
 .edu-section {
     background-color: rgb(216, 216, 216);
 }
@@ -100,12 +101,22 @@
         padding-top: 1rem;
     }
 
+
+    .my-info-description .global-headline h2 {
+        font-size: 4.5rem;
+    }
+
+    .my-info-description .global-headline h1 {
+        font-size: 3rem;
+    }
+
+
     .my-info-description ul li {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     
     .my-info-description ul h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
 
