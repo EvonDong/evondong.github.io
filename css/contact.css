@@ -46,7 +46,7 @@
     color: rgba(190, 190, 190);
 }
 
-.contact-form i.fa:hover {
+.contact-form i.fa:hover, .contact-form i.fab:hover {
     cursor: pointer;
     color: #fff;
     border: 2px solid #fff;
@@ -137,7 +137,7 @@ input::placeholder, textarea::placeholder {
         
     }
 
-    .contact-form i.fa {
+    .contact-form i.fa,  .contact-form i.fab {
         font-size: 1rem;
     }
 
