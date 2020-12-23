@@ -1,31 +1,41 @@
-#contact-section {
+.contact-section {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.9)), url(../images/contact-background.jpg) center no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    /* width: 100%;
     padding-bottom: 2%;
     justify-content: center;
-    align-items: center;
-    /* overflow-x: hidden;
-    background-attachment: fixed; */
+    align-items: center; */
+    overflow-x: hidden;
+    background-attachment: fixed;
 
 }
 
-#contact-section .container .global-headline .sub-headline {
+.contact-section .container .global-headline .sub-headline {
     padding-top: 6rem;
     color: #fff;
 }
 
+.contact-section .container .global-headline h3 {
+    padding: 2rem 0rem;
+    font-size: 2rem;
+}
+
+
 .contact-form {
-    margin: 10rem 0rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1rem 0rem;
 }
 
 .contact-form div:first-child {
-    padding: 1rem 3rem;
+    margin: 1rem 3rem;
     min-width: 35vw;
 }
 
-.contact-form i.fa {
+
+
+.contact-form i.fa, .contact-form i.fab{
     font-size: 2.2rem;
     padding: 3%;
     background-color: none;
@@ -40,11 +50,6 @@
     cursor: pointer;
     color: #fff;
     border: 2px solid #fff;
-}
-
-.contact-form {
-    display: grid;
-    grid-template-columns: auto auto;
 }
 
 .form-info {
@@ -92,28 +97,43 @@ input::placeholder, textarea::placeholder {
 
 
 @media screen and (max-width: 768px) {
-    #contact-section .contact-form {
-        display: block;
-        padding: 1rem 0rem;
-        width: 100%;
-        height: 10vh;
-        text-align: center;
-        margin: 2rem 0rem
+    .contact-section {
+        height: auto;
     }
 
-    #contact-section .submit {
+    .contact-section .contact-form {
+        display: flex;
+        flex-direction: column;
+        /* display: block; */
+        /* padding: 1rem 0rem; */
+        height: 100%;
+        text-align: center; 
+    }
+
+    .contact-section .submit {
         width: 60%;
     }
 
     .contact-form div:first-child {
-        padding: 0rem 0rem;
+        margin: 1rem 1rem;
+    }
+
+    .form-info {
+        font-size: 10px;
+        font-style: italic;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+
+    .contact-section .container .global-headline h3 {
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-height: 600px) {
 
     .form-info {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         
     }
 
