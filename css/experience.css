@@ -1,3 +1,15 @@
+
+
+/* 
+
+body { background: #000; }
+
+img { border: 0; max-width: 100%; } */
+
+/* .experience {
+    padding-top: 3rem;
+} */
+
 .experience {
     /* display: flex;
     justify-content: center;
@@ -9,92 +21,263 @@
     background-attachment: fixed;
 }
 
-
-.experience .sub-headline {
-    margin: 7vh 1rem;
-    text-align: center;
-    color: #ffffff;
+.container .global-headline .sub-headline {
+  text-align: center;
+  color: #efefef;
+  padding-top: 2rem;
 }
 
-.experience .container .global-headline .exp-headline {
-    color: #ffffff83;
+/** timeline box structure **/
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+  margin: 6rem 0rem;
 }
 
-.experience .container .experience-timeline {
-    margin: 3rem 0rem;
-    left: -10vw;
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
 }
 
-.experience .container .experience-content {
-    /* padding: 1rem 1rem; */
-    min-width: 25vw;
+.tldate {
+  display: block;
+  width: 200px;
+  background: #414141;
+  border: 3px solid #212121;
+  color: #ededed;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
 }
 
-.experience .container .experience-content h2 {
-    font-size: max(10px, 3vw);
+.timeline li {
+  margin-bottom: 25px;
+  position: relative;
 }
 
-.experience .container .experience-content h3 {
-    font-size: max(8px, 2vw);
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+.timeline li:after {
+  clear: both;
+}
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
 }
 
-.experience .container .experience-content h2 span {
-    font-size: max(7px, 2vw);
+/** timeline panels **/
+.timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  padding: 20px;
+  position: relative;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/** panel arrows **/
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
+  top:0;
+  right:0;
+  display: none;
+  border: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
 }
 
 
-
-.experience-timeline .experience-content h3, .experience-timeline .experience-content h2 {
-    margin-bottom: -5rem;
+/** timeline circle icons **/
+.timeline li .tl-circ {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  text-align: center;
+  background: #6a8db3;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-left: -16px;
+  border: 3px solid #90acc7;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: 99999;
 }
 
 
+/** timeline content **/
 
-
-@media screen and (min-width: 900px) {        /* if screen width is at least 900px */
-
-    .experience .sub-headline {
-        margin: 2rem 1rem;
-        text-align: center;
-        color: #ffffff;
-    }
-
-    .experience-timeline {
-        min-width: 50vw;
-    }
-
-    .experience .container .experience-content h2 span {
-        font-size: 2rem;
-    }
-    
-    .experience .container .experience-timeline {
-        margin: 3rem 0rem;
-        left: -13vw;
-    }
-
-    .experience .container .experience-content h2 {
-        font-size: 3rem;
-    }
-
-    .experience .container .experience-content h3 {
-        font-size: 2.5rem;
-    }
-
-    
+.tl-heading h4 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--secondary-font-color);
+  font-family: var(--secondary-font);
 }
 
-@media only screen and (max-height: 1440px) and (min-width: 900px)  {
-    
-    .experience .container .experience-content h2 {
-        font-size: min(5vw, 25px);
-    }
+.tl-heading h5 {
+  font-size: 2rem;
+  margin: 0.5rem 0rem;
+  color: var(--main-font-color-dark);
+  font-family: var(--main-font);
+}
 
-    .experience .container .experience-content h3 {
-        font-size: min(5vw, 20px);
-    }
+.tl-heading p {
+  font-size: 2rem;
+  font-weight: 800;
+}
 
-    .experience .container .experience-content h2 span {
-        font-size: min(5vw, 17px);
-    }
+.tl-body p, .tl-body ul {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  margin: 1rem 1rem;
+  display: inline-block;
+  margin: 0rem 2rem;
+}
 
-} 
+.tl-body ul li span {
+  background-image: linear-gradient(#9df4ff, #55acf3);
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	background-size: 100% 0.5rem;
+	transition: background-size .2s, background-position .1s ease-in .2s;
+}
+
+.tl-body ul li span:hover {
+  background-size: 100% 100%;
+	background-position: 0% 0%;
+	transition: background-position .2s, background-size .1s ease-in .2s;
+}
+
+
+.tl-body > p + p {
+  margin-top: 5px;
+}
+
+/** media queries **/
+@media (max-width: 991px) {
+  .timeline li .timeline-panel {
+    width: 44%;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-header h1 { font-size: 1.8em; }
+  
+  ul.timeline:before {
+    left: 40px;
+  }
+  
+  .tldate { width: 140px; }
+
+  ul.timeline li .timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+
+  ul.timeline li .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+
+  }
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+
+  .tl-heading h4 {
+    font-size: 2rem;
+  }
+
+  .tl-heading h5 {
+    font-size: 1.6rem;
+  }
+
+  .tl-heading p {
+    font-size: 1.6rem;
+  }
+
+  .tl-body p, .tl-body ul {
+    font-size: 1.5rem;
+  }
+  
+
+
+
+}
