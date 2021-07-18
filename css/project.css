@@ -145,7 +145,7 @@
     font-weight: 500;
     line-height: 2rem;
     letter-spacing: 1px;
-    padding: 0.8rem;
+    padding: 0.5rem;
 }
 
 .container .card .content p {
@@ -153,6 +153,7 @@
     color: var(--tertiary-font-color);
     font-weight: 100;
     letter-spacing: 1px;
+    margin: 0.2rem 0rem;
     font-family: var(--tertiary-font);
 }
 
@@ -334,11 +335,11 @@
     .container .card {
         min-width: 35rem;
         height: 27vh;
-        min-height: 43vh;
+        min-height: 45vh;
     }
 
     .container .card .content {
-        top: 75%;
+        top: 72%;
     }
 }
 
