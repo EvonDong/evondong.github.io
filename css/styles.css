@@ -924,10 +924,12 @@ header {
     align-items: center;
     border-top: 0.2rem solid rgba(255, 255, 255, 0.5);
     border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
-    background-image: url("../images/AWS-CloudPractitioner-logo.png") ;
-    background-size: cover;
+    /* background-size: cover; */
     background-color: rgb(255, 255, 255);
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+/* background-size: auto; */
 }
 
 .certifications-container .certifications-box .certifications-content {
@@ -937,6 +939,7 @@ header {
     transform: translateY(100px);
     opacity: 0;
     background-color: rgb(145, 160, 163);
+    justify-content: center;
 }
 
 
@@ -949,11 +952,12 @@ header {
 }
 
 .certifications-container .certifications-box .certifications-content .certifications-icon img {
-    width: 70%;
+    max-width: 40%;
+    margin: 1rem 1rem;
 }
 
 .certifications-container .certifications-box .certifications-content .certifications-title {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #fff;
     z-index: 1;
 }
@@ -961,13 +965,14 @@ header {
 .certifications-container .certifications-box .certifications-content a {
     position: relative;
     display: inline-block;
-    padding: 0.8rem 2rem;
+    padding: 1.5rem 2rem;
     margin-top: 1.5rem;
     background: #fff;
     color: #000;
     border-radius: 2rem;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.8rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 
