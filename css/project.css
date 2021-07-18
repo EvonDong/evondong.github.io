@@ -249,7 +249,7 @@
         min-width: 35rem;
         height: 27vh;
         min-height: 40vh;
-        margin: 2rem 2rem;
+        margin: 2.2rem 2.2rem;
         /* padding: 3rem 3rem; */
     }
 
@@ -258,7 +258,7 @@
     }
 
     .container .card .imgBx img {
-        height: 70%;
+        height: 65%; /*70% */
     }
 
     .container .card:hover .imgBx img {
@@ -335,6 +335,10 @@
         min-width: 35rem;
         height: 27vh;
         min-height: 43vh;
+    }
+
+    .container .card .content {
+        top: 75%
     }
     
 }
