@@ -173,9 +173,17 @@ img { border: 0; max-width: 100%; } */
 }
 
 .tl-heading h5 {
-  font-size: 2rem;
-  margin: 0.5rem 0rem;
+  font-size: 1.8rem;
+  /* margin: 0.5rem 0rem; */
   color: var(--main-font-color-dark);
+  /* font-family: var(--main-font); */
+  font-weight: 700;
+}
+
+.tl-heading h6 {
+  font-size: 1.6rem;
+  margin: 1rem 0rem;
+  color: cornflowerblue;
   font-family: var(--main-font);
 }
 
@@ -185,7 +193,7 @@ img { border: 0; max-width: 100%; } */
 }
 
 .tl-body p, .tl-body ul {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-bottom: 0;
   margin: 1rem 1rem;
   display: inline-block;
