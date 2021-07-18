@@ -924,11 +924,12 @@ header {
     align-items: center;
     border-top: 0.2rem solid rgba(255, 255, 255, 0.5);
     border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
-    /* background-size: cover; */
+    background-size: 100%;
     background-color: rgb(255, 255, 255);
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+    
 /* background-size: auto; */
 }
 
@@ -949,15 +950,16 @@ header {
     background: #000;
     width: 100%;
     height: 100%;
+    padding: 1rem 0rem;
 }
 
 .certifications-container .certifications-box .certifications-content .certifications-icon img {
-    max-width: 40%;
+    max-width: 30%;
     margin: 1rem 1rem;
 }
 
 .certifications-container .certifications-box .certifications-content .certifications-title {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #fff;
     z-index: 1;
 }
@@ -965,14 +967,14 @@ header {
 .certifications-container .certifications-box .certifications-content a {
     position: relative;
     display: inline-block;
-    padding: 1.5rem 2rem;
-    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
     background: #fff;
     color: #000;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 
@@ -1289,6 +1291,33 @@ footer {
         /* margin: 3rem 3rem; */
     }
 
+    .certifications-container .certifications-box {
+        position: relative;
+        width: 30rem;
+        height: 30rem;
+        margin: 3rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .certifications-container .certifications-box .certifications-content .certifications-title {
+        font-size: 2em;
+    }
+    
+    .certifications-container .certifications-box .certifications-content a {
+        position: relative;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        margin-top: 1.5rem;
+        background: #fff;
+        color: #000;
+        border-radius: 2rem;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.8rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+    }
 
     .footer-content {
         max-width: 77.5rem;
