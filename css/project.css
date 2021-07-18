@@ -249,7 +249,7 @@
         min-width: 35rem;
         height: 27vh;
         min-height: 40vh;
-        margin: 2.2rem 2.2rem;
+        margin: 2rem 2rem;
         /* padding: 3rem 3rem; */
     }
 
@@ -258,7 +258,7 @@
     }
 
     .container .card .imgBx img {
-        height: 65%; /*70% */
+        height: 70%;
     }
 
     .container .card:hover .imgBx img {
@@ -286,7 +286,7 @@
         justify-content: center;
         flex-direction: column;
         min-height: 7vh;
-        padding: 2.2rem 0rem;
+        padding: 2rem 0rem;
     }
 
     .container .card:hover .content h2 {
@@ -338,9 +338,8 @@
     }
 
     .container .card .content {
-        top: 75%
+        top: 80%;
     }
-    
 }
 
 /* @media screen and (max-width: 1024px) and (min-height: 1366px) { 
