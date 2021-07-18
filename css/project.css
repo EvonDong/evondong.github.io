@@ -48,7 +48,7 @@
 
     /* min-height: 70vh; */
 
-    height: 72vh;
+    height: 70vh;
 
     display: flex;
     justify-content: center;
@@ -286,7 +286,7 @@
         justify-content: center;
         flex-direction: column;
         min-height: 7vh;
-        padding: 2rem 0rem;
+        padding: 2.2rem 0rem;
     }
 
     .container .card:hover .content h2 {
@@ -334,8 +334,9 @@
     .container .card {
         min-width: 35rem;
         height: 27vh;
-        min-height: 40vh;
+        min-height: 43vh;
     }
+    
 }
 
 /* @media screen and (max-width: 1024px) and (min-height: 1366px) { 
