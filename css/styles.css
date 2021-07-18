@@ -194,7 +194,7 @@ header {
 }
 
 .sub-headline {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: var(--secondary-font);
     color: var(--secondary-font-color);
     font-weight: 100;
@@ -622,7 +622,6 @@ header {
 
 .experience-timeline ul {
     margin: 2rem 2rem;
-    
 }
 
 .experience-timeline ul li {
@@ -630,7 +629,7 @@ header {
     position: relative;
     width: 50%;
     box-sizing: border-box;
-    margin-bottom: 15rem;
+    margin-bottom: 20rem;
 }
 
 .experience-timeline ul li > div {
@@ -727,6 +726,7 @@ header {
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
 } */
+
 
 .experience-timeline ul li .experience-time h4 {
     margin: 2rem 1rem;
@@ -865,6 +865,111 @@ header {
     font-size: 1.5rem;
 }
 
+
+/* Certifications */
+
+.certifications {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/certificates-background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.certifications .container {
+    width: 100%;
+    /* max-width: 200rem; */
+    margin: auto;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.certifications .container .global-headline .sub-headline {
+    text-align: center;
+    color: #fff;
+}
+.certifications .container .asterisk {
+    text-align: center;
+}
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* 
+.certifications-box {
+    max-width: 45%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+} */
+
+
+
+.certifications-container .certifications-box {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
+    box-shadow: 1.2rem 1.2rem 1.5rem rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.2rem solid rgba(255, 255, 255, 0.5);
+    border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
+    background-image: url("../images/AWS-CloudPractitioner-logo.png") ;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.certifications-container .certifications-box .certifications-content {
+    padding: 1rem;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+    background-color: rgb(145, 160, 163);
+}
+
+
+.certifications-container .certifications-box:hover .certifications-content {
+    transform: translateY(0px);
+    opacity: 1;
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.certifications-container .certifications-box .certifications-content .certifications-icon img {
+    width: 70%;
+}
+
+.certifications-container .certifications-box .certifications-content .certifications-title {
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+
+.certifications-container .certifications-box .certifications-content a {
+    position: relative;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    margin-top: 1.5rem;
+    background: #fff;
+    color: #000;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
 
 /* Experience info */
 
@@ -1178,6 +1283,13 @@ footer {
         max-width: 33.3%;
         /* margin: 3rem 3rem; */
     }
+
+
+    .certifications-container .certifications-box {
+        width: 30rem;
+        height: 30rem;
+    }
+
 
     .footer-content {
         max-width: 77.5rem;
