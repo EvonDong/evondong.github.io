@@ -8,7 +8,7 @@
     align-items: center; */
     overflow-x: hidden;
     background-attachment: fixed;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: absolute;
 }
 
