@@ -299,7 +299,7 @@ header {
     margin-right: -2px;
 }
 
-.cta-btn {
+.cta-btn, .cta-btn:visited {
     font-size: 1.1rem;
     background-color: #fff;
     padding: 0.9rem 1.8rem;
