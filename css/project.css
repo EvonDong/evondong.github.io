@@ -55,7 +55,7 @@
     align-items: center;
     /* margin: 1.5rem; */
     /* padding: 2rem 1rem; */
-    transition: 0.5s;
+    transition: 0.3s;
     /* background: #0826d1; */
     /* background: linear-gradient(235deg, #c3c9ff, #d5d5f1, #9bcaff); */
     background: #000;
@@ -81,7 +81,7 @@
     width: 100%;
     height: 70%;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .container .card:hover .imgBx img {
@@ -128,7 +128,7 @@
     min-height: 9vh;
     padding: 1rem 2rem;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 
@@ -278,7 +278,7 @@
         justify-content: center;
         align-items: center;
         opacity: 0;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     .container .card:hover .content {
