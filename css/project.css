@@ -140,12 +140,12 @@
 } 
 
 .container .card .content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #fff;
     font-weight: 500;
     line-height: 2rem;
     letter-spacing: 1px;
-    padding: 1rem;
+    padding: 0.8rem;
 }
 
 .container .card .content p {
@@ -316,15 +316,15 @@
     }
 
     .modal-content .proj-body .purpose {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .modal-content .proj-body .tech-header {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
     .modal-content .proj-body ul {
-        font-size: 2rem;
+        font-size: 1.6rem;
         padding: 1rem 1rem;
     }
 
@@ -338,7 +338,7 @@
     }
 
     .container .card .content {
-        top: 80%;
+        top: 75%;
     }
 }
 
